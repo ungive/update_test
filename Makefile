@@ -22,6 +22,7 @@ copy-pubkey:
 	cp pubkey.pem docs
 
 # only for documentation how keys were generated
+# note that the private key is just a test key, not used in production
 gen-keys: copy-pubkey
 	if [-f privkey.pem]; then $(error Existing keys would be overwritten); fi
 	openssl genpkey -algorithm Ed25519 -out privkey.pem
