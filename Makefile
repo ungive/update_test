@@ -13,6 +13,7 @@ sign-sums:
 	openssl pkeyutl -sign -inkey privkey.pem \
 		-out docs/SHA256SUMS.txt.sig \
 		-rawin -in docs/SHA256SUMS.txt
+	head -c 10 docs/SHA256SUMS.txt.sig > docs/SHA256SUMS.txt.badsig
 
 verify-sums:
 	openssl pkeyutl -verify -pubin -inkey pubkey.pem \
