@@ -1,0 +1,26 @@
+{
+  "$comment": "Imitates a downgrade attack by reporting a newer version, but serving an old release.",
+  "tag_name": "v1.2.4",
+  "assets": [
+    {
+      "name": "release-1.2.3.txt",
+      "content_type": "text/plain",
+      "browser_download_url": "https://github.com/ungive/update_test/releases/download/v1.2.3/release-1.2.3.txt"
+    },
+    {
+      "name": "release-1.2.3.zip",
+      "content_type": "application/zip",
+      "browser_download_url": "https://github.com/ungive/update_test/releases/download/v1.2.3/release-1.2.3.zip"
+    },
+    {
+      "name": "release-1.2.3-subfolder.zip",
+      "content_type": "application/zip",
+      "browser_download_url": "https://github.com/ungive/update_test/releases/download/v1.2.3/release-1.2.3-subfolder.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "content_type": "text/plain",
+      "browser_download_url": "https://github.com/ungive/update_test/releases/download/v1.2.3/SHA256SUMS.txt"
+    }
+  ]
+}
